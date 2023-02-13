@@ -1,7 +1,7 @@
 
 from slack_sdk.webhook import WebhookClient
 
-url = "https://hooks.slack.com/services/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"
+url = "https://hooks.slack.com/services/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"
 webhook = WebhookClient(url)
 
 def sendSlackMessage (status):
@@ -12,7 +12,7 @@ def sendSlackMessage (status):
 				"type": "header",
 				"text": {
 					"type": "plain_text",
-					"text": ":table_tennis_paddle_and_ball:Ping Pong Room Status:table_tennis_paddle_and_ball:"
+					"text": ":table_tennis_paddle_and_ball: Ping Pong Room Status :table_tennis_paddle_and_ball:"
 				}
 			},
 			{
