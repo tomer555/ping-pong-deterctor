@@ -12,9 +12,9 @@ class PingPongMonitor(RoomMonitor):
 
     def handleRoomOccupied(self):
         sendSlackMessage(self.room_status)
-        self.monitorRepository(self.last_motion_time, self.room_status)
+        self.monitorRepository.insert(self.last_motion_time, self.room_status)
 
     def handleRoomFree(self):
         sendSlackMessage(self.room_status)
-        self.monitorRepository(self.last_motion_time, self.room_status)
+        self.monitorRepository.insert(self.last_motion_time, self.room_status)
     
